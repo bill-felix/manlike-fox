@@ -1,2 +1,0 @@
-setwd("C:/Users/BFELIX/Documents/BIA/r/data/")
-info <- read.csv("data/"Fisher.csv")
