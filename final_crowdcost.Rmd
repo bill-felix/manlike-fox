@@ -1,6 +1,6 @@
 ---
 title: "crowdcost"
-author: "manlike fox"
+author: "manlike fox & assoc."
 date: "Wednesday, January 14, 2015"
 output: html_document
 ---

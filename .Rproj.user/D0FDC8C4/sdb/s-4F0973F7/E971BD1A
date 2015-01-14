@@ -1,0 +1,16 @@
+{
+    "contents" : "\n# set the working directory that you want to source\nsetwd(\"~/GitHub/r\")\n\n# source the R script that you want to add to your workspace >>>>>>\nsource(\"test groups a b c.R\")\n\n# grab another source if needed >>>>>>\nsource(\"main.R\")\n\n\n# return to Project's working directory\nsetwd(\"~/GitHub\")\n",
+    "created" : 1421073109435.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2361215954",
+    "id" : "E971BD1A",
+    "lastKnownWriteTime" : 1420659759,
+    "path" : "~/GitHub/source the main.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

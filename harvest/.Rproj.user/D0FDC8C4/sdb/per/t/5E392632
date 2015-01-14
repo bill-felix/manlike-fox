@@ -1,0 +1,16 @@
+{
+    "contents" : " #  HARVEST #\n # H ARVEST #\n## HA RVEST ##\n # HAR VEST #\n # HARV EST #\n # HARVE ST #\n # HARVEST  #\n\nlibrary(rvest)\nlibrary(dplyr)\nlibrary(XML)\n\n\n# choose where you want to harvest\ntwc_url <- \"http://www.timewarnercable.com/en/plans-packages/internet/internet-service-plans.html\"\n\n# cinbell_url <- \"http://www.cincinnatibell.com/internet/\"\n\n# create a value to reference for variable creation\ntwc_content <- twc_url %>%\n  html() %>%\n  html_nodes(\"*\")\n\n\n# vignette(\"selectorgadget\") # is useful for finding css something or others\n# create the plan variable\ntwc_plans <- twc_content %>%\n  html_node(\".medium\") %>%\n  html_text()\n\n\n\n\n\n\n\n\n\n##### EXAMPLE #####\n# Inspired by\n# http://notesofdabbler.github.io/201408_hotelReview/scrapeTripAdvisor.html\n\nlibrary(rvest)\n\nurl <- \"http://www.tripadvisor.com/Hotel_Review-g37209-d1762915-Reviews-JW_Marriott_Indianapolis-Indianapolis_Indiana.html\"\n\nreviews <- url %>%\n  html() %>%\n  html_nodes(\"#REVIEWS .innerBubble\")\n\nid <- reviews %>%\n  html_node(\".quote a\") %>%\n  html_attr(\"id\")\n\nquote <- reviews %>%\n  html_node(\".quote span\") %>%\n  html_text()\n\nrating <- reviews %>%\n  html_node(\".rating .rating_s_fill\") %>%\n  html_attr(\"alt\") %>%\n  gsub(\" of 5 stars\", \"\", .) %>%\n  as.integer()\n\ndate <- reviews %>%\n  html_node(\".rating .ratingDate\") %>%\n  html_attr(\"title\") %>%\n  strptime(\"%b %d, %Y\") %>%\n  as.POSIXct()\n\nreview <- reviews %>%\n  html_node(\".entry .partial_entry\") %>%\n  html_text()\n\ndata.frame(id, quote, rating, date, review, stringsAsFactors = FALSE) %>% View()",
+    "created" : 1420727025864.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3173808872",
+    "id" : "5E392632",
+    "lastKnownWriteTime" : 1420829909,
+    "path" : "~/GitHub/manlike-fox/harvest/harvest time.R",
+    "project_path" : "harvest time.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
