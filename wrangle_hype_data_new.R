@@ -9,7 +9,7 @@ library(magrittr)
 library(stringr)
 library(lubridate)
 library(ggplot2)
-library(zoo)
+library(zoo)      
 
 options(max.print = 250) ## limit printed results
 
