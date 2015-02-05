@@ -8,7 +8,7 @@ library(ggplot2)
 library(tidyr)
 
 
-setwd("~/GitHub/r/data/bls_ce")
+# setwd("~/GitHub/r/data/bls_ce")
 options(max.print = 100)
 
 values <- read.table("cx.data.1.AllData.txt", header =T, sep ="\t")
@@ -36,6 +36,9 @@ region_wide <- wide_data %>%
   arrange(category, year)
 
 colnames(region_wide) <- c("Category", "Demo_Code", "Year", "All", "Midwest", "Northeast", "South", "West")
+
+# setwd("~/GitHub/manlike-fox/shinyapp")
+write.csv(region_wide, "cx.csv", row.names =F)
 
 life_dat <- region_wide %>%
   filter(grepl("Life", Category)) %>%
@@ -82,5 +85,5 @@ setwd("shinyapps")
 # library(shinyapps)
 # shinyapps::deployApp('~/GitHub/r/data/bls_ce/shinyapp')
 
-library(shinyapps)
-shinyapps::deployApp('~/GitHub/r/data/bls_ce/shinyapp')
+# library(shinyapps)
+# shinyapps::deployApp('~/GitHub/r/data/bls_ce/shinyapp')

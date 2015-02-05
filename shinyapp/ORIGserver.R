@@ -1,35 +1,31 @@
-# alt server.R
+# server.R
 
 library(shiny)
 library(dplyr)
 library(magrittr)
-library(ggplot2)
-library(ggvis)
+# setwd("~/GitHub/r/data/bls_ce/shinyapp")
 
 # lets look at life ins.
 source('global.R')
 
 # Define a server for the Shiny app
 shinyServer(function(input, output) {
-  # Returns the dat
+  # Return the cols
   datInput <- reactive({
     x <- dat[, c("Category", "Year", input$region)];
     y <- x[x$Category == input$topic,];
-    y <- y[,2:3]
+    y
   })
        
   # Fill in the spot we created for a plot
-#   output$textStr <- renderText({
-#     cx <- datInput()
-#   })
   output$meanPlot <- renderPlot({
      
-    # Render a plot
-    cx <- datInput();
-    gg <- ggplot(cx, aes_string(colnames(cx)[1], colnames(cx)[2]));
-    gg + geom_line(size = 2,
-                  color = "darkgreen")
-    
-    
+  
+    # Render a barplot
+    cx <- datInput()
+    plot(cx$Year, cx[,3],
+         type = "b",
+         xlab = "Years",
+         ylab = "Avg. Spend")
   })
 })

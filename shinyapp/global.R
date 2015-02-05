@@ -1,7 +1,9 @@
 # shiny demonstration # 
 
-setwd("~/GitHub/manlike-fox/shinyapp")
-life <- as.matrix(read.table("life.txt"))
+# setwd("~/GitHub/manlike-fox/shinyapp")
+dat <- read.table("cx.csv", header =T, sep = ",")
+yrs <- 1984:2013
+topics <- unique(dat$Category)
 
 ## lets get shiny
 # library(shiny)
@@ -16,4 +18,4 @@ life <- as.matrix(read.table("life.txt"))
 # shinyapps::setAccountInfo(name='manlike-fox', token='CCF85FE350DD646C513FE1BE50D68114', secret='4djBSd5s3iPsYmIQWO/BmkORukNMJGHiTpBjCOc3')
 # 
 # library(shinyapps)
-# shinyapps::deployApp('~/GitHub/r/data/bls_ce/shinyapp')
+# shinyapps::deployApp('~/GitHub/manlike-fox/shinyapp')
