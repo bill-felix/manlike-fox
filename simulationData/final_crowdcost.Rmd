@@ -1,0 +1,119 @@
+---
+title: "CrowdCost.co Simulation and Analysis"
+author: "Manlike Fox & Assoc."
+date: "Wednesday, January 19, 2015"
+output: html_document
+---
+
+##Contents:
+1. Simulation and Summary
+2. Randomization and Comparison Summary
+3. Submit Function
+4. Graphical Summaries
+
+###Simulation and Summary
+```{r, echo =F, eval =T, message=F}
+## # # # # ###
+##   wrangle##
+## hype_data##
+## # # # # ###
+
+library(plyr)
+library(dplyr)
+library(magrittr)
+library(stringr)
+library(lubridate)
+library(ggplot2)
+
+options(max.print = 250) ## limit printed results
+
+# import data (hype for now)
+
+rdate <- function(n, start, end) { ## start/end format = "yyyy/mm/dd"
+    st <- as.POSIXct(as.Date(start))
+    et <- as.POSIXct(as.Date(end))
+    dt <- as.numeric(difftime(et,st,unit="sec")) ## calculates difftime
+    ev <- runif(n, min = 1.1, max = dt) 
+    rt <- st + ev ## adds difftime to start
+}
+
+submit <- function(h) {
+  h <- arrange(h, timestamp) ## order observations by date
+  h <- ddply(h, .(provider, zip), function(x) {x$lowest <- 
+       cummin(x$price); 
+       return(x)}) ## calculate lowest price to date
+  h <- ddply(h, .(provider, zip), function(x) {x$average <- 
+       round(cumsum(x$price)/seq_along(x$price), digits =2); 
+       return(x)}) ## calculate avg price to date
+  ## h <- ddply(h, .(provider,zip), function(x) {x$avg_price <- rollmean(x$price, 10, na.pad=TRUE, align = "right"); return(x)}) ## rolling avg by last 10 obvs
+  h <- ddply(h, .(provider, zip), function(x) {x$highest <- 
+       cummax(x$price); 
+       return(x)}) ## calculate highest price to date 
+  h %<>%
+    mutate(thmbdown = ifelse(h$average < h$price, 1, 0))
+  }
+             
+populate_hype_data <- function(x,n) {
+  x <- data.frame(sess_id = sample(50000000:99999999, n),
+#                   long = rnorm(n, mean = 84.5352946, sd = .005),
+#                   lat = rnorm(n, mean = 39.1651805, sd = .005),
+                  zip = sample(zips, n, replace =T),
+                  timestamp = rdate(n, "2014/01/01", "2015/12/31"),
+                  serv = sample(services, n, replace =T),
+                  provider = sample(providers, n, replace =T),
+                  price = round(runif(n, min = 45, max = 145), digits =2))
+}
+
+set.seed(6)
+dat <- NULL
+providers <- c("Time Warner Cable", "Cincinnati Bell", "Comcast")
+services <- c("cable/internet","cable", "internet")
+zips <- c("45223", "45202", "45206", "45201", "45239", "45205", "45207", "45225", "45217", "45213", "45214", "45216", "45220")
+general_price <- round(runif(1000, min = 40, max = 160), digits = 2)
+```
+
+```{r, echo =T, eval =T}
+dat <- populate_hype_data(dat,50000)
+head(dat, 10)
+summary(dat[ ,2:6])
+```
+
+###Randomize and Summarize w/ Diffs
+```{r, echo =T, eval =T}
+mean(dat$price)
+sd(dat$price)
+
+# artificially discount or raise providers
+set.seed(80)
+artificial <- rnorm(500, mean = 1, sd = .035)
+counter <- 30
+repeat {
+  dat %<>%
+  mutate(price = ifelse(zip == sample(zips, 1) & 
+                        provider == sample(providers, 1), 
+                        price * sample(artificial, 1), price * 1))
+  counter <- counter - 1
+  if(counter < 0)
+  break;   
+}
+mean(dat$price)
+sd(dat$price)
+```
+
+###Submit Function
+```{r, echo =T, eval =T, tidy =T}
+# submit function simulates the submit button and returns results
+dat <- submit(dat)
+head(dat, 10)
+summary(dat[ ,6:9])
+table(dat$thmbdown) # thmbsdown = 1, means that the user submitted a price higher than the average for the provider in their zip
+```
+###Graphical Summaries
+```{r, echo =F, eval =T, fig.width= 10}
+ggplot(dat, aes(y = price, x = zip, fill = provider)) + geom_boxplot()
+ggplot(dat, aes(y = average, x = zip, fill = provider)) + geom_jitter(alpha = .45, position = position_jitter(width = .2))
+
+base <- qplot(scale(dat[dat$zip == "45223", "price"]), geom = "density")
+base + stat_function(fun = dnorm, colour = "red", arg = list(mean = 0)) # Northside's Distribution Curve vs. Normal
+```
+
