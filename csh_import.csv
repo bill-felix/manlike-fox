@@ -1,47 +1,48 @@
-﻿Unique	Number	Name	Architect	Publication	Constructed	Status	Address	City
-1	1A	Unnamed	J. R. Davidson	Feb-45	1945	Unbuilt	NA	NA
-2	1B	Unnamed	J. R. Davidson	Feb-48	1948	Extant	10152 Toluca Lake Avenue	North Hollywood
-3	1B	Unnamed	Greta Davidson	Feb-48	1948	Extant	10152 Toluca Lake Avenue	North Hollywood
-4	2	Unnamed	Sumner Spaulding	Aug-47	1947	Extant	857 Chapea Road	Pasadena
-5	2	Unnamed	John Rex	Aug-47	1947	Extant	857 Chapea Road	Pasadena
-6	3	Unnamed	William Wurster	Mar-49	1949	Demolished	13187 Chalon Road	Los Angeles
-7	3	Unnamed	Theodore Bernardi	Mar-49	1949	Demolished	13187 Chalon Road	Los Angeles
-8	4	Greenbelt House	Ralph Rapson	Sep-45	1989	Exhibit	NA	NA
-9	5	Loggia House	Whitney R. Smith	Apr-46	NA	Unbuilt	NA	NA
-10	6	Omega	Richard Neutra	Oct-45	NA	Unbuilt	NA	NA
-11	7	Unnamed	Thornton Abell	Jul-48	1948	Extant	6236 North Deerfield Avenue[1]	San Gabriel
-12	8	Eames House	Charles Eames	Dec-49	1949	Extant	203 Chautauqua Boulevard	Pacific Palisades
-13	8	Eames House	Ray Eames	Dec-49	1949	Extant	203 Chautauqua Boulevard	Pacific Palisades
-14	9	Entenza House	Charles Eames	Jul-50	1949	Extant	205 Chautauqua Boulevard	Pacific Palisades
-15	9	Entenza House	Eero Saarinen	Jul-50	1949	Extant	205 Chautauqua Boulevard	Pacific Palisades
-16	10	Unnamed	Kemper Nomland	Oct-47	1947	Significantly Altered	711 South San Rafael Avenue[3]	Pasadena
-17	10	Unnamed	Kemper Nomland Jr.	Oct-47	1947	Significantly Altered	711 South San Rafael Avenue[3]	Pasadena
-18	11	Unnamed	J. R. Davidson	Jul-46	1946	Demolished	540 South Barrington Avenue	West Los Angeles
-19	12	Unnamed	Whitney R. Smith	Feb-46	NA	Unbuilt	NA	NA
-20	13	Alpha	Richard Neutra	Mar-46	NA	Unbuilt	NA	NA
-21	15	Unnamed	J. R. Davidson	Jan-47	1947	Extant	4755 Lasheart Drive	La Cañada Flintridge
-22	16	Unnamed	Rodney Walker	Feb-47	1947	Demolished	9945 Beverly Grove Drive	Beverly Hills
-23	17A	Unnamed	Rodney Walker	Jul-47	1947	Extant	7861 Woodrow Wilson Drive	Los Angeles
-24	17B	Unnamed	Craig Ellwood	Mar-56	1956	Remodeled Beyond Recognition	9554 Hidden Valley Road	Beverly Hills
-25	18A	West House	Rodney Walker	Feb-48	1948	Extant	199 Chautauqua Boulevard	Pacific Palisades
-26	18B	Fields House	Craig Ellwood	Jun-58	1958	Remodeled Beyond Recognition	1129 Miradero Road	Beverly Hills
-27	19A	Unnamed	Don Knorr	Sep-47	NA	Unbuilt	NA	NA
-28	20A	Stuart Bailey House	Richard Neutra	Dec-48	1948	Extant	219 Chautauqua Boulevard	Pacific Palisades
-29	20B	Bass House	C. Buff C. Straub D. Hensman	Nov-58	1958	Extant	2275 Santa Rosa Avenue	Altadena
-30	21A	Unnamed	Richard Neutra	May-47	NA	Unbuilt	NA	NA
-31	21B	Walter Bailey House	Pierre Koenig	Feb-59	1958	Extant	9038 Wonderland Park Avenue	West Hollywood
-32	1950	Unnamed	Raphael Soriano	Dec-50	1950	Remodeled	1080 Ravoli Drive	Pacific Palisades
-33	1953	Unnamed	Craig Ellwood	Jun-53	1953	Extant	1811 Bel Air Road	Bel-Air
-34	22	Stahl House	Pierre Koenig	Jun-60	1960	Extant	1635 Woods Drive	Los Angeles
-35	23A&C	Triad	Killingsworth Brady Smith & Assoc.	Mar-61	1960	Extant	2329 (C[6]) 2342 (A[7]) and 2343 (B[8]) Rue de Anne [9]	La Jolla
-36	23B	Triad	Killingsworth Brady Smith & Assoc.	Mar-61	1960	Remodeled Beyond Recognition	2329 (C[6]) 2342 (A[7]) and 2343 (B[8]) Rue de Anne [9]	La Jolla
-37	24	Unnamed	A. Quincy Jones	Dec-61	NA	Unbuilt	NA	NA
-38	24	Unnamed	Frederick E. Emmons	Dec-61	NA	Unbuilt	NA	NA
-39	25	Frank House	Killingsworth Brady Smith & Assoc.	Dec-62	1962	Extant	82 Rivo Alto Canal	Long Beach
-40	26	Harrison House	Beverley David Thorne	Jan-63	1963	Extant	177 San Marino Drive	San Rafael
-41	27	Unnamed	Campbell and Wong	Jun-63	NA	Unbuilt	NA	NA
-42	28	Case Study House #28	C. Buff	Sep-65	1966	Extant	91 Inverness Road	Thousand Oaks
-43	28	Case Study House #28	D. Hensman	Sep-65	1966	Extant	91 Inverness Road	Thousand Oaks
-44	Apt 1	Unnamed	Alfred N. Beadle	Sep-64	1964	Extant	4402 28th Street	Phoenix
-45	Apt 1	Unnamed	Alan A. Dailey	Sep-64	1964	Extant	4402 28th Street	Phoenix
-46	Apt 2	Unnamed	Killingsworth Brady Smith & Assoc.	May-64	NA	Unbuilt	NA	NA
+Number,Name,Architect,Publication,Constructed,Status,Address,City
+1A,NA,J. R. Davidson,16469,1945,Unbuilt,NA,NA
+1B,NA,J. R. Davidson,17564,1948,Extant,10152 Toluca Lake Avenue,North Hollywood
+1B,NA,Greta Davidson,17564,1948,Extant,10152 Toluca Lake Avenue,North Hollywood
+2,NA,Sumner Spaulding,17380,1947,Extant,857 Chapea Road,Pasadena
+2,NA,John Rex,17380,1947,Extant,857 Chapea Road,Pasadena
+3,NA,William Wurster,17958,1949,Demolished,13187 Chalon Road,Los Angeles
+3,NA,Theodore Bernardi,17958,1949,Demolished,13187 Chalon Road,Los Angeles
+4,Greenbelt House,Ralph Rapson,16681,1989,Exhibit,NA,NA
+5,Loggia House,Whitney R. Smith,16893,NA,Unbuilt,NA,NA
+6,Omega,Richard Neutra,16711,NA,Unbuilt,NA,NA
+7,NA,Thornton Abell,17715,1948,Extant,6236 North Deerfield Avenue,San Gabriel
+8,Eames House,Charles Eames,18233,1949,Extant,203 Chautauqua Boulevard,Pacific Palisades
+8,Eames House,Ray Eames,18233,1949,Extant,203 Chautauqua Boulevard,Pacific Palisades
+9,Entenza House,Charles Eames,18445,1949,Extant,205 Chautauqua Boulevard,Pacific Palisades
+9,Entenza House,Eero Saarinen,18445,1949,Extant,205 Chautauqua Boulevard,Pacific Palisades
+10,NA,Kemper Nomland,17441,1947,Significantly Altered,711 South San Rafael Avenue,Pasadena
+10,NA,Kemper Nomland Jr.,17441,1947,Significantly Altered,711 South San Rafael Avenue,Pasadena
+11,NA,J. R. Davidson,16984,1946,Demolished,540 South Barrington Avenue,West Los Angeles
+12,NA,Whitney R. Smith,16834,NA,Unbuilt,NA,NA
+13,Alpha,Richard Neutra,16862,NA,Unbuilt,NA,NA
+15,NA,J. R. Davidson,17168,1947,Extant,4755 Lasheart Drive,La Ca�ada Flintridge
+16,NA,Rodney Walker,17199,1947,Demolished,9945 Beverly Grove Drive,Beverly Hills
+17A,NA,Rodney Walker,17349,1947,Extant,7861 Woodrow Wilson Drive,Los Angeles
+17B,NA,Craig Ellwood,20515,1956,Remodeled Beyond Recognition,9554 Hidden Valley Road,Beverly Hills
+18A,West House,Rodney Walker,17564,1948,Extant,199 Chautauqua Boulevard,Pacific Palisades
+18B,Fields House,Craig Ellwood,21337,1958,Remodeled Beyond Recognition,1129 Miradero Road,Beverly Hills
+19A,NA,Don Knorr,17411,NA,Unbuilt,NA,NA
+20A,Stuart Bailey House,Richard Neutra,17868,1948,Extant,219 Chautauqua Boulevard,Pacific Palisades
+20B,Bass House,C. Buff,21490,1958,Extant,2275 Santa Rosa Avenue,Altadena
+20B,Bass House,C. Straub,21490,1958,Extant,2275 Santa Rosa Avenue,Altadena
+20B,Bass House,D. Hensman,21490,1958,Extant,2275 Santa Rosa Avenue,Altadena
+21A,NA,Richard Neutra,17288,NA,Unbuilt,NA,NA
+21B,Walter Bailey House,Pierre Koenig,21582,1958,Extant,9038 Wonderland Park Avenue,West Hollywood
+1950,NA,Raphael Soriano,18598,1950,Remodeled,1080 Ravoli Drive,Pacific Palisades
+1953,NA,Craig Ellwood,19511,1953,Extant,1811 Bel Air Road,Bel-Air
+22,Stahl House,Pierre Koenig,22068,1960,Extant,1635 Woods Drive,Los Angeles
+23,Triad,Killingsworth Brady Smith & Assoc.,22341,1960,Extant Remodeled Beyond Recognition,2329 2342 2343 Rue de Anne,La Jolla
+24,NA,A. Quincy Jones,22616,NA,Unbuilt,NA,NA
+24,NA,Frederick E. Emmons,22616,NA,Unbuilt,NA,NA
+25,Frank House,Killingsworth Brady Smith & Assoc.,22981,1962,Extant,82 Rivo Alto Canal,Long Beach
+26,Harrison House,Beverley David Thorne,23012,1963,Extant,177 San Marino Drive,San Rafael
+27,NA,Campbell and Wong,23163,NA,Unbuilt,NA,NA
+28,Case Study House #28,C. Buff,23986,1966,Extant,91 Inverness Road,Thousand Oaks
+28,Case Study House #28,D. Hensman,23986,1966,Extant,91 Inverness Road,Thousand Oaks
+Apt 1,NA,Alfred N. Beadle,23621,1964,Extant,4402 28th Street,Phoenix
+Apt 1,NA,Alan A. Dailey,23621,1964,Extant,4402 28th Street,Phoenix
+Apt 2,NA,Killingsworth Brady Smith & Assoc.,23498,NA,Unbuilt,NA,NA
