@@ -1,4 +1,4 @@
-Unique	Number	Name	Architect	Publication	Constructed	Status	Address	City
+ï»¿Unique	Number	Name	Architect	Publication	Constructed	Status	Address	City
 1	1A	Unnamed	J. R. Davidson	Feb-45	1945	Unbuilt	NA	NA
 2	1B	Unnamed	J. R. Davidson	Feb-48	1948	Extant	10152 Toluca Lake Avenue	North Hollywood
 3	1B	Unnamed	Greta Davidson	Feb-48	1948	Extant	10152 Toluca Lake Avenue	North Hollywood
@@ -15,11 +15,11 @@ Unique	Number	Name	Architect	Publication	Constructed	Status	Address	City
 14	9	Entenza House	Charles Eames	Jul-50	1949	Extant	205 Chautauqua Boulevard	Pacific Palisades
 15	9	Entenza House	Eero Saarinen	Jul-50	1949	Extant	205 Chautauqua Boulevard	Pacific Palisades
 16	10	Unnamed	Kemper Nomland	Oct-47	1947	Significantly Altered	711 South San Rafael Avenue[3]	Pasadena
-17	10	Unnamed	"Kemper Nomland, Jr."	Oct-47	1947	Significantly Altered	711 South San Rafael Avenue[3]	Pasadena
+17	10	Unnamed	Kemper Nomland Jr.	Oct-47	1947	Significantly Altered	711 South San Rafael Avenue[3]	Pasadena
 18	11	Unnamed	J. R. Davidson	Jul-46	1946	Demolished	540 South Barrington Avenue	West Los Angeles
 19	12	Unnamed	Whitney R. Smith	Feb-46	NA	Unbuilt	NA	NA
 20	13	Alpha	Richard Neutra	Mar-46	NA	Unbuilt	NA	NA
-21	15	Unnamed	J. R. Davidson	Jan-47	1947	Extant	4755 Lasheart Drive	La Cañada Flintridge
+21	15	Unnamed	J. R. Davidson	Jan-47	1947	Extant	4755 Lasheart Drive	La CaÃ±ada Flintridge
 22	16	Unnamed	Rodney Walker	Feb-47	1947	Demolished	9945 Beverly Grove Drive	Beverly Hills
 23	17A	Unnamed	Rodney Walker	Jul-47	1947	Extant	7861 Woodrow Wilson Drive	Los Angeles
 24	17B	Unnamed	Craig Ellwood	Mar-56	1956	Remodeled Beyond Recognition	9554 Hidden Valley Road	Beverly Hills
@@ -27,21 +27,21 @@ Unique	Number	Name	Architect	Publication	Constructed	Status	Address	City
 26	18B	Fields House	Craig Ellwood	Jun-58	1958	Remodeled Beyond Recognition	1129 Miradero Road	Beverly Hills
 27	19A	Unnamed	Don Knorr	Sep-47	NA	Unbuilt	NA	NA
 28	20A	Stuart Bailey House	Richard Neutra	Dec-48	1948	Extant	219 Chautauqua Boulevard	Pacific Palisades
-29	20B	Bass House	"C. Buff, C. Straub, D. Hensman"	Nov-58	1958	Extant	2275 Santa Rosa Avenue	Altadena
+29	20B	Bass House	C. Buff C. Straub D. Hensman	Nov-58	1958	Extant	2275 Santa Rosa Avenue	Altadena
 30	21A	Unnamed	Richard Neutra	May-47	NA	Unbuilt	NA	NA
 31	21B	Walter Bailey House	Pierre Koenig	Feb-59	1958	Extant	9038 Wonderland Park Avenue	West Hollywood
 32	1950	Unnamed	Raphael Soriano	Dec-50	1950	Remodeled	1080 Ravoli Drive	Pacific Palisades
 33	1953	Unnamed	Craig Ellwood	Jun-53	1953	Extant	1811 Bel Air Road	Bel-Air
 34	22	Stahl House	Pierre Koenig	Jun-60	1960	Extant	1635 Woods Drive	Los Angeles
-35	23A&C	Triad	"Killingsworth, Brady, Smith & Assoc."	Mar-61	1960	Extant	"2329 (C[6]), 2342 (A[7]) and 2343 (B[8]) Rue de Anne [9]"	La Jolla
-36	23B	Triad	"Killingsworth, Brady, Smith & Assoc."	Mar-61	1960	Remodeled Beyond Recognition	"2329 (C[6]), 2342 (A[7]) and 2343 (B[8]) Rue de Anne [9]"	La Jolla
+35	23A&C	Triad	Killingsworth Brady Smith & Assoc.	Mar-61	1960	Extant	2329 (C[6]) 2342 (A[7]) and 2343 (B[8]) Rue de AnneÂ [9]	La Jolla
+36	23B	Triad	Killingsworth Brady Smith & Assoc.	Mar-61	1960	Remodeled Beyond Recognition	2329 (C[6]) 2342 (A[7]) and 2343 (B[8]) Rue de AnneÂ [9]	La Jolla
 37	24	Unnamed	A. Quincy Jones	Dec-61	NA	Unbuilt	NA	NA
 38	24	Unnamed	Frederick E. Emmons	Dec-61	NA	Unbuilt	NA	NA
-39	25	Frank House	"Killingsworth, Brady, Smith & Assoc."	Dec-62	1962	Extant	82 Rivo Alto Canal	Long Beach
-40	26	Harrison House	"Beverley ""David"" Thorne"	Jan-63	1963	Extant	177 San Marino Drive	San Rafael
+39	25	Frank House	Killingsworth Brady Smith & Assoc.	Dec-62	1962	Extant	82 Rivo Alto Canal	Long Beach
+40	26	Harrison House	Beverley David Thorne	Jan-63	1963	Extant	177 San Marino Drive	San Rafael
 41	27	Unnamed	Campbell and Wong	Jun-63	NA	Unbuilt	NA	NA
 42	28	Case Study House #28	C. Buff	Sep-65	1966	Extant	91 Inverness Road	Thousand Oaks
 43	28	Case Study House #28	D. Hensman	Sep-65	1966	Extant	91 Inverness Road	Thousand Oaks
 44	Apt 1	Unnamed	Alfred N. Beadle	Sep-64	1964	Extant	4402 28th Street	Phoenix
 45	Apt 1	Unnamed	Alan A. Dailey	Sep-64	1964	Extant	4402 28th Street	Phoenix
-46	Apt 2	Unnamed	"Killingsworth, Brady, Smith & Assoc."	May-64	NA	Unbuilt	NA	NA
+46	Apt 2	Unnamed	Killingsworth Brady Smith & Assoc.	May-64	NA	Unbuilt	NA	NA
